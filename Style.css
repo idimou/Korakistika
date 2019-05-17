@@ -1,0 +1,20 @@
+﻿body {
+    font-size: 1em;
+    font-family: Arial;
+    background: #eee;
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#hellomessage {
+    font-weight: bold;
+}

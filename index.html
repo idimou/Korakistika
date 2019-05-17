@@ -1,0 +1,41 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form>
+        What is your name: ti e re? <input type="text" size="20" id="myname" onkeydown="if (event.keyCode == 13)  document.getElementById('mybutton').click()" />
+        <button type="button" id="mybutton">Submit!!!</button>
+
+        <input type="text" style="display: none;" />
+    </form>
+    <div id="hellomessage"></div>
+
+
+    <h2>Translation</h2>
+
+    <p id="demo">You can use this page to translate from any language to Niko's secret language.</p>
+    <table style="width:100%">
+        <tr>
+            <th>Input text</th>
+            <th>Niko's secret language</th>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <input type="text" name="inputText" style="height:150px;width:300px">
+                </form>
+                <button type="button" onclick='document.getElementById("TranslatedText").innerHTML = Translate()'>-></button>
+            </td>
+            <td><p id="TranslatedText"></p></td>
+        </tr>
+    </table>
+
+
+    <script src="korakistika.js"></script>
+</body>
+</html>
