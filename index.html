@@ -7,31 +7,35 @@
     <title></title>
 </head>
 <body>
-    <form>
-        What is your name: <input type="text" size="20" id="myname" onkeydown="if (event.keyCode == 13)  document.getElementById('mybutton').click()" />
-        <button type="button" id="mybutton">Submit!!!</button>
-
-        <input type="text" style="display: none;" />
-    </form>
-    <div id="hellomessage"></div>
+    <p id="GoogleHeader">
+        <span style='color:#6699FF'>D</span><span style='color:red'>i</span><span style='color:#FFC000'>m</span><span style='color:#6699FF'>o</span><span style='color:#339933'>u</span><span style='color:#7F7F7F'> Translate</span>
+    </p>
 
 
-    <h2>Translation</h2>
 
-    <p id="demo">You can use this page to translate from any language to Niko's secret language.</p>
+
+    
+
     <table style="width:100%">
         <tr>
-            <th>Input text</th>
-            <th>Niko's secret language</th>
+            <th>ENGLISH    GREEK</th>
+            <th>KORAKISTIKA</th>
         </tr>
         <tr>
             <td>
                 <form>
-                    <input type="text" name="inputText" style="height:150px;width:300px">
+                    <input type="text" id="inputText" style="height:150px;width:300px">
                 </form>
-                <button type="button" onclick='document.getElementById("TranslatedText").innerHTML = Translate()'>-></button>
+                
             </td>
-            <td><p id="TranslatedText"></p></td>
+            <td>
+                <input type="text" id="TranslatedTextBox" style="height:150px;width:300px">
+                <!--<p id="TranslatedTextBox" style="height:150px;width:300px; border-color:gray"></p>-->
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" id="TranslateButton"> Translate</button></td>
+            <td></td>
         </tr>
     </table>
 

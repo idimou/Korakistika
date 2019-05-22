@@ -1,15 +1,8 @@
-﻿function ShowHelloMessage()
-{
-    var name = document.getElementById("myname");
-    document.getElementById("hellomessage").innerHTML = "Hellooooo!!!, " + name.value; + name.value
-}
-
-document.getElementById("mybutton").onclick = ShowHelloMessage;
-
-
-
-function Translate() {
+﻿function ShowTranslatedText() {
     var inputText = document.getElementById('inputText').value;
-    var translatedText = "translated text";
+    var translatedText = "ka"+inputText;
+    document.getElementById("TranslatedTextBox").value = translatedText
     return translatedText;
 }
+document.getElementById("TranslateButton").onclick = ShowTranslatedText;
+

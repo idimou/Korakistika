@@ -2,7 +2,6 @@
     font-size: 1em;
     font-family: Arial;
     background: #eee;
-    background-color: lightblue;
 }
 
 h1 {
@@ -16,5 +15,9 @@ p {
 }
 
 #hellomessage {
+    font-weight: bold;
+}
+
+#GoogleHeader {
     font-weight: bold;
 }
